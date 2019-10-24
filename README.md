@@ -1,2 +1,2 @@
 # stimitcss
-Testing a combo of Stimulus, Webpack and ITCSS together
+Testing a combo of Stimulus, Webpack and ITCSS
