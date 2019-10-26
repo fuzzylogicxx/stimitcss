@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/style.scss"],"names":[],"mappings":"AAEA,KACE,SAHc,CAIf,KAGG,2EAA4E","file":"main.css","sourcesContent":["$body-color: red;\n\nbody {\n  color: $body-color;\n}\n\nbody {\n    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;\n}\n"],"sourceRoot":""}

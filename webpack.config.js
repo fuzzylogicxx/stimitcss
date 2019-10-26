@@ -1,29 +1,43 @@
-const path = require("path")
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: {
-    bundle: "./src/index.js"
-  },
-
+  entry: './src/index.js',
   output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "public")
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public'),
   },
-
-  mode: "production",
-  devtool: "source-map",
-
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
+    }),
+  ],
+  devtool: 'source-map', 
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: [
-          /node_modules/
-        ],
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          { loader: "babel-loader" }
+          //'style-loader', 
+          MiniCssExtractPlugin.loader, 
+          {
+            loader: 'css-loader', 
+            options: {
+              sourceMap: true
+            }
+          }, 
+          {
+            loader: 'sass-loader', 
+            options: {
+              sourceMap: true
+            }
+          }, 
         ]
-      }
+      }, 
     ]
-  }
-}
+  },
+};

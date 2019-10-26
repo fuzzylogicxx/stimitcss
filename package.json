@@ -1,20 +1,27 @@
 {
     "name": "stimulus-starter",
     "version": "1.0.0",
-    "main": "index.js",
     "license": "MIT",
     "private": true,
     "scripts": {
-    "start": "node server.js"
+        "start": "node server.js",
+        "build": "webpack"
     },
     "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.5.0",
-    "babel-loader": "^8.0.6",
-    "express": "^4.17.1",
-    "stimulus": "^1.1.1",
-    "webpack": "^4.39.2",
-    "webpack-dev-middleware": "^3.7.0"
+        "@babel/core": "^7.5.5",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/preset-env": "^7.5.0",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.2.0",
+        "express": "^4.17.1",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.13.0",
+        "sass-loader": "^8.0.0",
+        "stimulus": "^1.1.1",
+        "webpack": "^4.39.2",
+        "webpack-dev-middleware": "^3.7.0"
+    },
+    "devDependencies": {
+        "webpack-cli": "^3.3.9"
     }
 }
