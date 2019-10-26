@@ -36,116 +36,19 @@
 
 <body>
 
-  <header id="global-header" class="global-header">
-    <div class="container">
-      <h1>FreeAgent Exchange Rates</h1>
-    </div>
-  </header>
+  <h1>Top Level Heading</h1>
 
-  <main id="primary-content" class="primary-content">
-    
-    <div class="container">
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde natus alias, perspiciatis qui dicta, nostrum velit nam quidem in quia assumenda delectus necessitatibus fuga iste a, aut eum amet maiores.</p>
 
-      <div class="latest-rates-content stack">
+  <h2>Here’s a subheading</h2>
 
-        <div class="box">
-          <form id="form-rates-base" class="form-custom form-rates-base" action="/rates" accept-charset="UTF-8" method="get">
-            <input name="utf8" type="hidden" value="&#x2713;" />
-            <div class="form-group">
-              <label for="amount">EUR</label>
-              <input type="number" name="amount" id="amount" value="100" required="required" min="1" max="10000" step="1" />
-            </div>
-            <input type="submit" value="Convert" data-disable-with="Convert" />
-          </form>
-        </div>
+  <p>Lorem <a href="/">ipsum dolor</a> sit amet consectetur, adipisicing elit.</p>
 
-        <h2>Latest Rates</h2>
-        
-        <div>
-          <p class="note">
-          <span class="text-icon-pair">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
-            <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line>
-            </svg> <span>Tip: select any two rows to launch our Historic Comparison tool.</span>
-          </span>
-          </p>
-        </div>
+  <ul><li>thing</li><li>another thing</li></ul>
+
   
-        <div class="table-container" id="latest-rates-table-container">
-          <table id="latest-rates-table" class="latest-rates-table">
-            <thead>
-              <tr>
-                <th>Currency</th>
-                <th class="num">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr data-currency="USD">
-                  <td>USD</td>
-                  <td class="num">110.96</td>
-                </tr>
-                <tr data-currency="GBP">
-                  <td>GBP</td>
-                  <td class="num">86.46</td>
-                </tr>
-                <tr data-currency="JPY">
-                  <td>JPY</td>
-                  <td class="num">12050.65</td>
-                </tr>
-                <tr data-currency="AUD">
-                  <td>AUD</td>
-                  <td class="num">162.80</td>
-                </tr>
-                <tr data-currency="CAD">
-                  <td>CAD</td>
-                  <td class="num">145.24</td>
-                </tr>
-                <tr data-currency="CHF">
-                  <td>CHF</td>
-                  <td class="num">110.14</td>
-                </tr>
-                <tr data-currency="CNY">
-                  <td>CNY</td>
-                  <td class="num">784.42</td>
-                </tr>
-                <tr data-currency="SEK">
-                  <td>SEK</td>
-                  <td class="num">1071.31</td>
-                </tr>
-                <tr data-currency="NZD">
-                  <td>NZD</td>
-                  <td class="num">173.97</td>
-                </tr>
-            </tbody>
-          </table>
-        </div>
 
-      </div> <!-- /.stack -->
 
-    </div> <!-- /.container -->
-
-    <script>
-    // Save today’s rates to a JS object 
-    // so later we need only fetch previous days’ rates.
-    const ratesToday = {"USD":1.10965,"GBP":0.864612,"JPY":120.506528,"AUD":1.627969,"CAD":1.452377,"CHF":1.101433,"CNY":7.84415,"SEK":10.713089,"NZD":1.739721};
-    </script>
-  
-    <div class="modal-overlay closed" id="modal-overlay"></div>
-    <div class="modal closed" id="modal">
-      <!-- <button class="close-button" id="close-button" type="button" aria-label="Close">✖</button> -->
-      <div class="modal-body stack" id="modal-body"></div>
-    </div>
-  </main>
-
-  <footer aria-label="site" id="global-footer" class="global-footer">
-    <div class="footer-content container">
-      <p>2019 <a href="mailto:laurencehughes1976@gmail.com">Laurence Hughes</a></p>
-      <a class="text-icon-pair github-link" href="https://github.com/fuzzylogicxx/forex-web-app.git">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> 
-        <span>View on Github</span>
-      </a>
-    </div>
-  </footer>
 
   <!-- Scripts -->
 

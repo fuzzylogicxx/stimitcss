@@ -13,7 +13,7 @@
 
 
 
-import './style.scss';
+import './scss/style.scss';
 
 // function component() {
 //     const element = document.createElement('div');
