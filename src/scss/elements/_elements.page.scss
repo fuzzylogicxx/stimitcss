@@ -6,10 +6,44 @@
  * Page-level styling (e.g. HTML and BODY elements).
  */
 
-html {
-  font-size: ($global-font-size / 16px) * 1em;
-  line-height: $global-line-height / $global-font-size;
-  @include font-family(sans-serif);
-  background-color: $color-page-background;
-  color: $color-page-text;
+:root {
+  // Colours
+  --color-brand-primary: #{$color-brand-primary};
+  --color-dark: $color-dark;
+  --color-gray: $color-grey;
+  --color-grey-dark: $color-grey-dark;
+  --color-grey-med: $color-grey-med;
+  --color-grey-light: $color-grey-light;
+  --color-white: $color-white;
+  --color-error: $color-error;
+  --border-thin: $global-border-thin;
+  --border-thick: $global-border-thick;
+  --border-radius: $global-border-radius;
+  
+  // Modular Scale Typography & Spacing
+  --ratio: 1.4;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));--s3:calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));--s5:calc(var(--s4) * var(--ratio));
+  
+  // Max-width for readability
+  --measure: #{$measure};
+  
+  // Font stacks
+  --font-stack-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-stack-special: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+//  html {
+//   font-size: ($global-font-size / 16px) * 1em;
+//   line-height: $global-line-height / $global-font-size;
+//   @include font-family(sans-serif);
+//   background-color: $color-page-background;
+//   color: $color-page-text;
+// }

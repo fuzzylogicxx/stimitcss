@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  #GLOBAL-HEADER
+\*------------------------------------*/
+
+.c-global-header {
+  background-color: $color-global-header-background;
+  color: $color-global-header;
+  padding: $global-spacing-unit; //padding: var(--s1);
+}
+
+.c-global-header__logo {
+
+}

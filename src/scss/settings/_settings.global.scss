@@ -5,12 +5,20 @@
 // Project-level settings and setup.
 
 // Base typographical styles and baseline grid.
-$global-font-size:    14px !default;
-$global-line-height:  20px !default;
+$global-font-size:    16px !default;
+$global-line-height:  24px !default;
 
 // Standardise some UI treatments.
-$global-radius:       3px !default;
-$global-transition:   0.333333333s !default;
+$global-radius:         4px !default;
+$global-transition:     0.333333333s !default;
+$global-border-radius:  4px;
+$global-border-thin:    2px; //var(--s-5)
+$global-border-thick:   4px; // var(--s-2)
+
+
+
+// Max-width for readability
+$measure: 65ch;
 
 
 
@@ -29,6 +37,18 @@ $global-spacing-unit-small: round($global-spacing-unit / 2);
 $global-spacing-unit-large: round($global-spacing-unit * 2);
 $global-spacing-unit-huge:  round($global-spacing-unit * 4);
 
+ // Modular Scale Typography & Spacing
+//  --ratio: 1.4;
+//  --s-5: calc(var(--s-4) / var(--ratio));
+//  --s-4: calc(var(--s-3) / var(--ratio));
+//  --s-3: calc(var(--s-2) / var(--ratio));
+//  --s-2: calc(var(--s-1) / var(--ratio));
+//  --s-1: calc(var(--s0) / var(--ratio));
+//  --s0: 1rem;
+//  --s1: calc(var(--s0) * var(--ratio));
+//  --s2: calc(var(--s1) * var(--ratio));--s3:calc(var(--s2) * var(--ratio));
+//  --s4: calc(var(--s3) * var(--ratio));--s5:calc(var(--s4) * var(--ratio));
 
 
 
+ 
