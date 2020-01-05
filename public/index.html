@@ -1,130 +1,33 @@
-
 <!doctype html>
 <html dir="ltr" lang="en-GB">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Foreign Exchange Tool</title>
+    <title>Stimulus & ITCSS</title>
     
-    <!-- Global styles -->
-    <!-- <link rel="stylesheet" href="/assets/css/main.min.css"> -->
+
     <link rel="stylesheet" href="main.css">
 
     <!-- FAO search engine bots: do not crawl this challenge. -->
     <meta name="robots" content="noindex, nofollow">
-      
-    <meta name="author" content="Laurence Hughes">
-    <meta name="description" content="A challenge completed by Laurence Hughes.">
-    <meta name="keywords" content="challenge" />    
 
-    <!-- Favicons / icons covering all OS / device requirements -->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Challenge">
-    <meta name="application-name" content="Challenge">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="/site.webmanifest"> -->
-
-    <!-- Security -->
-    <meta name="csrf-param" content="authenticity_token" />
-    <meta name="csrf-token" content="oDegZWkyvH7yEZJ+WuYPQou9ud3AdI8O1vIfne5H03fc1L7yJU0JUiLoeM+bGzDCmMNcj74F48q2Yx7r23Z6yw==" />
     
 </head>
 
 <body>
 
-  <header id="global-header" class="c-global-header">
-    <div class="o-container">
-      <h1>FreeAgent Exchange Rates</h1>
-    </div>
-  </header>
+  <h1>A Heading</h1>
 
-  <main id="primary-content" class="primary-content">
-    
-    <div class="container">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium id reprehenderit at atque debitis mollitia perferendis accusamus maiores, ipsa quae itaque quasi, molestias dolores accusantium ipsum illum saepe sequi eius.</p>
 
-      <div class="latest-rates-content stack">
+  <div data-controller="hello">
+    <input data-target="hello.name" type="text">
+    <button data-action="click->hello#greet">Greet</button>
+  </div>
 
-        <div class="box">
-          <form id="form-rates-base" class="form-custom form-rates-base" action="/rates" accept-charset="UTF-8" method="get">
-            <input name="utf8" type="hidden" value="&#x2713;" />
-            <div class="form-group">
-              <label for="amount">EUR</label>
-              <input type="number" name="amount" id="amount" value="100" required="required" min="1" max="10000" step="1" />
-            </div>
-            <input type="submit" value="Convert" data-disable-with="Convert" />
-          </form>
-        </div>
-        
-        <div class="table-container" id="latest-rates-table-container">
-          <table id="latest-rates-table" class="latest-rates-table">
-            <caption>Latest Rates</caption>
-            <thead>
-              <tr>
-                <th scope="col">Currency</th>
-                <th scope="col" class="num">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr data-currency="USD">
-                  <td>USD</td>
-                  <td class="num">110.96</td>
-                </tr>
-                <tr data-currency="GBP">
-                  <td>GBP</td>
-                  <td class="num">86.46</td>
-                </tr>
-                <tr data-currency="JPY">
-                  <td>JPY</td>
-                  <td class="num">12050.65</td>
-                </tr>
-                <tr data-currency="AUD">
-                  <td>AUD</td>
-                  <td class="num">162.80</td>
-                </tr>
-                <tr data-currency="CAD">
-                  <td>CAD</td>
-                  <td class="num">145.24</td>
-                </tr>
-                <tr data-currency="CHF">
-                  <td>CHF</td>
-                  <td class="num">110.14</td>
-                </tr>
-                <tr data-currency="CNY">
-                  <td>CNY</td>
-                  <td class="num">784.42</td>
-                </tr>
-                <tr data-currency="SEK">
-                  <td>SEK</td>
-                  <td class="num">1071.31</td>
-                </tr>
-                <tr data-currency="NZD">
-                  <td>NZD</td>
-                  <td class="num">173.97</td>
-                </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div>
-          <p class="note">
-          <span class="text-icon-pair">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
-            <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line>
-            </svg> <span>Tip: select any two rows to launch our Historic Comparison tool.</span>
-          </span>
-          </p>
-        </div>
   
 
-      </div> <!-- /.stack -->
 
-    </div> <!-- /.container -->
-
-  </main>
 
   <!-- Scripts -->
 
@@ -136,4 +39,3 @@
 
 </body>
 </html>
-
